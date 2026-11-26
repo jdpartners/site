@@ -39,4 +39,9 @@ ul.docs li { border: 1px solid var(--line); border-radius: 8px; margin: 12px 0; 
 ul.docs a { display: block; padding: 16px 20px; text-decoration: none; color: var(--fg); }
 ul.docs a span { display: block; color: var(--muted); font-size: 14px; }
 footer.site { border-top: 1px solid var(--line); color: var(--muted); font-size: 13px; padding: 24px 0 40px; }
+/* 앱이 동의 화면 안에 띄우는 페이지 — 상단 메뉴가 없어 위 여백을 줄인다. 목록은 조항의 호가 읽히게 들여쓴다. */
+body.embed main { padding: 20px 0 32px; }
+body.embed h1 { font-size: 22px; }
+main ul, main ol { padding-left: 22px; }
+blockquote { margin: 8px 0; padding: 8px 14px; background: var(--box); border-left: 3px solid var(--line); }
 @media print { header.site, nav.toc, footer.site { display: none; } body { font-size: 12pt; } }
